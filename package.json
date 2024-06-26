@@ -1,0 +1,19 @@
+{
+  "name": "api_playw",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "juhanTous",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "@playwright/test": "^1.44.1",
+    "@types/node": "^20.14.8",
+    "faker": "^6.6.6"
+  },
+  "dependencies": {
+    "luxon": "^3.4.4"
+  }
+}
