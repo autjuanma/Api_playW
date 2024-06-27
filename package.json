@@ -2,7 +2,16 @@
   "name": "api_playw",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+
+    "lint": "eslint . --ext .ts",
+    "report": "allure serve",
+    "create:suite": "cd ./src/framework/manager & npx ts-node SuiteManager.ts",
+    "test": "playwright test --project=suite",
+    "local:test": "playwright test --project=local",
+    "local:test:ui": "playwright test --project=local --ui"
+
+  },
   "keywords": [],
   "author": "juhanTous",
   "license": "ISC",
@@ -11,7 +20,8 @@
     "@faker-js/faker": "^8.4.1",
     "@playwright/test": "^1.44.1",
     "@types/node": "^20.14.8",
-    "faker": "^6.6.6"
+    "faker": "^6.6.6",
+    "ts-node": "^10.9.2"
   },
   "dependencies": {
     "luxon": "^3.4.4"
