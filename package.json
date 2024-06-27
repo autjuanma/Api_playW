@@ -3,14 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-
     "lint": "eslint . --ext .ts",
     "report": "allure serve",
     "create:suite": "cd ./src/framework/manager & npx ts-node SuiteManager.ts",
     "test": "playwright test --project=suite",
     "local:test": "playwright test --project=local",
     "local:test:ui": "playwright test --project=local --ui"
-
   },
   "keywords": [],
   "author": "juhanTous",
@@ -20,6 +18,7 @@
     "@faker-js/faker": "^8.4.1",
     "@playwright/test": "^1.44.1",
     "@types/node": "^20.14.8",
+    "allure-playwright": "^3.0.0-beta.3",
     "faker": "^6.6.6",
     "ts-node": "^10.9.2"
   },
