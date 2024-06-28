@@ -6,8 +6,11 @@ branding:
   icon: download
   color: purple
 
-on: [push]
-
+on:
+  push:
+    branches: [ master, gh-pages ]
+  pull_request:
+    branches: [ master, gh-pages ]
 
 jobs:
   tests:
